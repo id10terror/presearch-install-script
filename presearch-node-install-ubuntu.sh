@@ -21,7 +21,7 @@ if [ ! $(. /etc/os-release && echo "$ID") = "ubuntu" ]; then
 fi
 
 CONFIG_DIR=/opt/docker/presearch
-CONFIG_URL=https://gist.githubusercontent.com/id10terror/62513657cfc0156c31f5c8178ec44418/raw/7f8ecceb7acea5823f585db3796deb7b7421a6d0/presearch-docker-compose.yml
+CONFIG_URL=https://github.com/id10terror/presearch-install-script/raw/main/docker-compose.yml
 
 # Install some Docker pre-reqs
 sudo apt update -y; 
