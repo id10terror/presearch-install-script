@@ -6,7 +6,7 @@ Presearch Node Install Script using docker-compose (currently only supports Ubun
 ## Run Command in Terminal
 
 ```bash
-curl -sSL https://raw.githubusercontent.com/id10terror/presearch-install-script/main/presearch-node-install-ubuntu.sh | sudo bash
+curl -sSL https://github.com/id10terror/presearch-install-script/raw/main/presearch-node-install-ubuntu.sh | sudo bash
 ````
 
 ---
