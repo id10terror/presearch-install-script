@@ -8,6 +8,12 @@ Presearch Node Install Script using docker-compose (currently only supports Ubun
 ```bash
 curl -sSL https://github.com/id10terror/presearch-install-script/raw/main/presearch-node-install-ubuntu.sh | sudo bash
 ````
+---
+
+If you receive a `curl command not found` error, you can install *curl* first by running this command:
+```bash
+sudo apt install curl -y
+```
 
 ---
 
