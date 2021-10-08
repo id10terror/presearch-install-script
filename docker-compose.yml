@@ -1,0 +1,26 @@
+version: "2"
+
+services:
+  node:
+    image: presearch/node:latest
+    container_name: presearch-node
+    hostname: presearch-node
+    restart: unless-stopped
+    labels:
+      - com.centurylinklabs.watchtower.enable=true
+    environment:
+      - REGISTRATION_CODE=${REGCODE}
+    volumes:
+            - ${NODE_DIR}
+
+  updater:
+    image: containrrr/watchtower:latest
+    container_name: presearch-auto-updater
+    restart: unless-stopped
+    environment:
+      - WATCHTOWER_CLEANUP=true
+      - WATCHTOWER_POLL_INTERVAL=300
+      - WATCHTOWER_LABEL_ENABLE=true
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      
