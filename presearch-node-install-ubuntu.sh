@@ -54,7 +54,7 @@ sudo echo "REGCODE=$NODE_REG_CODE" > $CONFIG_DIR/.env;
 sudo echo "NODE_DIR=$CONFIG_DIR/app/node:/app/node" >> $CONFIG_DIR/.env;
 
 # Download docker-compose config file from github repo
-sudo curl $CONFIG_URL --output $CONFIG_DIR/docker-compose.yml;
+sudo curl -sSL $CONFIG_URL --output $CONFIG_DIR/docker-compose.yml;
 
 # Creates docker system account and adds to docker group
 # Assigns the new docker account as owner of new directory
