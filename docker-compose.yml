@@ -14,12 +14,12 @@ services:
             - ${NODE_DIR}
 
   updater:
-    image: containrrr/watchtower:latest
+    image: presearch/auto-updater:latest
     container_name: presearch-auto-updater
     restart: unless-stopped
     environment:
       - WATCHTOWER_CLEANUP=true
-      - WATCHTOWER_POLL_INTERVAL=300
+      - WATCHTOWER_POLL_INTERVAL=900
       - WATCHTOWER_LABEL_ENABLE=true
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
