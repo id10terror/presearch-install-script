@@ -40,7 +40,7 @@ $(cd /opt/docker/presearch && docker-compose up -d --force-recreate) &&  docker 
 ```
 7. If you did this correctly, you should see a line like this in the log `info: Node is listening for searches...`
 
-*If you see a Duplicate Node error in the log, make sure you have stopped the container in the old node and wait a for 30 seconds or so for error to clear on the new node.*
+*If you see a Duplicate Node error in the log, make sure you have stopped the container in the old node, then wait 30 seconds or so for the error to clear on the new node.*
 
 
 ---
